@@ -15,5 +15,6 @@
       if (e.key === 'Escape') { menu.setAttribute('aria-expanded', 'false'); links.classList.remove('open'); }
     });
   }
+  document.querySelectorAll('[data-print-guide]').forEach(button => button.addEventListener('click', () => window.print()));
   document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 })();
