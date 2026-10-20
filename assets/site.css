@@ -38,3 +38,44 @@
 @media(max-width:750px){.hero-author-intro{padding-top:53px}.hero-author-intro .hero-lead{font-size:16px}.hero-author-grid{grid-template-columns:1fr;gap:30px;padding:32px 0 65px}.hero-author-portrait{min-height:395px}.hero-portrait-frame{height:340px;width:min(285px,80%)}.hero-author-books{text-align:center}.hero-author-books>p{margin:0 auto 23px}.hero-book-pair{gap:12px;text-align:left}.hero-book-picture{height:245px;padding:13px}.hero-book-link>strong{font-size:16px}.hero-book-link>span{font-size:11px}.hero-meet-link{margin-top:25px}}
 @media(max-width:400px){.hero-book-picture{height:200px;border-radius:17px}.hero-book-link>strong{font-size:15px}.hero-author-intro h1{font-size:40px}}
 
+
+/* Colorful storybook polish: author portrait left, featured books right */
+.hero.hero-author{isolation:isolate;background:radial-gradient(circle at 10% 44%,#f8c7d7 0,transparent 32%),radial-gradient(circle at 90% 20%,#e2ceff 0,transparent 34%),linear-gradient(130deg,#fff8e8 0%,#fff0e8 50%,#efe3ff 100%)}
+.hero.hero-author::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.33;background-image:radial-gradient(circle,#d69fe3 2px,transparent 3px),radial-gradient(circle,#ebbb69 2px,transparent 3px);background-position:15px 40px,55px 70px;background-size:155px 155px,205px 205px}
+.hero-author-intro,.hero-author-grid{position:relative;z-index:2}
+.story-sprinkles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.story-sprinkles span{position:absolute;font-size:clamp(19px,3vw,41px);opacity:.7;text-shadow:0 4px 12px rgba(255,255,255,.65)}
+.story-sprinkles span:nth-child(1){top:13%;left:7%;color:#da7fa7;transform:rotate(-16deg)}
+.story-sprinkles span:nth-child(2){top:25%;right:7%;color:#dca047;transform:rotate(12deg)}
+.story-sprinkles span:nth-child(3){top:54%;left:3%;color:#a46dc2;transform:rotate(-12deg)}
+.story-sprinkles span:nth-child(4){bottom:10%;right:4%;color:#e18b9e;transform:rotate(18deg)}
+.story-sprinkles span:nth-child(5){top:43%;right:2%;color:#a67fdc;transform:rotate(10deg)}
+.story-sprinkles span:nth-child(6){bottom:7%;left:35%;color:#e0a846;transform:rotate(-9deg)}
+.hero-author-intro{padding-top:74px}
+.hero-author-intro h1{color:#332454;text-wrap:balance}
+.hero-author-intro .eyebrow{color:#784579}
+.hero-author-intro .hero-lead{color:#5a4f66}
+.hero-books-cta{display:inline-flex;align-items:center;gap:10px;margin-top:12px;padding:10px 19px;background:#fff;color:#50357e;border:2px solid #ddc9f5;border-radius:100px;font-size:13px;font-weight:800;box-shadow:0 7px 22px rgba(86,44,114,.12);transition:transform .2s,box-shadow .2s}
+.hero-books-cta:hover{transform:translateY(-3px);box-shadow:0 11px 23px rgba(86,44,114,.18)}
+.hero-portrait-glow{background:linear-gradient(130deg,#f8b9d1 0%,#d7c4fc 58%,#ffdc88)}
+.hero-portrait-caption{background:linear-gradient(125deg,#fff1c9,#ffe0ee)}
+.hero-author-books{background:rgba(255,255,255,.57);border:2px solid rgba(255,255,255,.85);border-radius:30px;padding:30px;box-shadow:0 23px 50px rgba(93,56,109,.11)}
+.hero-author-books>h2{color:#57388b}
+.hero-book-picture{border:3px solid rgba(255,255,255,.82);box-shadow:0 12px 32px rgba(76,44,104,.16)}
+.hero-book-purple{background:linear-gradient(140deg,#c8b0f4,#eed0fa 69%,#ffdfef)}
+.hero-book-peach{background:linear-gradient(145deg,#ffcfb0,#ffe5af 63%,#ffd7dd)}
+.book-section{background:linear-gradient(180deg,#fffdf7,#fcf2fc 58%,#fff9ed)}
+.feature-book{border:2px solid rgba(226,198,233,.62);box-shadow:0 22px 55px rgba(81,45,107,.12)}
+.feature-art-lilac{background:radial-gradient(circle at 22% 24%,#ffe4ea,transparent 35%),linear-gradient(145deg,#d8c4fd,#efe0fc)}
+.feature-art-peach{background:radial-gradient(circle at 79% 18%,#fff8c9,transparent 34%),linear-gradient(145deg,#ffd5b5,#ffe5d4)}
+.book-quick-links{display:flex;align-items:center;flex-wrap:wrap;gap:13px 18px}
+.feature-buy-link{display:inline-flex;gap:6px;align-items:center;border-radius:100px;padding:10px 13px;background:#f5e7ff;color:#73428c;font-size:13px;font-weight:800}
+.feature-buy-link:hover{background:#ebd5fb}
+.book-two .feature-buy-link{background:#ffedda;color:#8b5233}
+.book-two .feature-buy-link:hover{background:#ffdfbb}
+.wish-section{background:linear-gradient(110deg,#493277,#66509e 55%,#ae5985)}
+.connect-wrap{background:linear-gradient(135deg,#ffe7ba,#ffe1ea 48%,#e6dcff);border:2px solid white}
+@media(max-width:1000px){.hero-author-books{padding:23px}.hero-author-grid{gap:23px}}
+@media(max-width:750px){.hero-author-intro{padding-top:52px}.hero-author-books{padding:24px 17px 27px;border-radius:24px}.story-sprinkles span{opacity:.40}.story-sprinkles span:nth-child(3),.story-sprinkles span:nth-child(5){display:none}}
+@media(max-width:400px){.hero-author-books{padding:20px 12px 24px}.feature-buy-link{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.hero-books-cta{transition:none}}
