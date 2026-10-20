@@ -109,3 +109,58 @@
 .bio-source-note{font-size:13px;line-height:1.8;color:#655974;margin:35px auto 0}
 @media(max-width:750px){.biography-hero{padding:22px 0 72px}.biography-hero-grid,.bio-story-layout{grid-template-columns:1fr;gap:37px}.biography-photo{width:min(84%,330px);margin:0 auto 32px}.biography-intro h1{font-size:55px}.biography-intro>p:not(.biography-lead),.bio-story-body p{font-size:16px}.bio-story-side h2{font-size:39px}.bio-story-spark{display:none}.bio-actions-center{flex-direction:column}.bio-actions-center .btn{width:min(100%,370px)}}
 @media(max-width:400px){.bio-actions{flex-direction:column;align-items:stretch}.bio-actions .btn{width:100%}}
+
+/* Family reading guide - mobile friendly and print ready */
+.family-feature{background:linear-gradient(125deg,#fff9e7,#fff0f4 52%,#f0e7ff)}
+.family-feature-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:9%;align-items:center}
+.family-feature-art{min-height:300px;border:5px solid white;border-radius:32px;position:relative;display:grid;place-items:center;background:linear-gradient(140deg,#d7c3fb,#ffcedf 59%,#ffe2a9);box-shadow:0 16px 32px #49325d20}
+.family-feature-heart{font-size:148px;color:#d57ca2;line-height:1;text-shadow:7px 9px white;transform:rotate(-11deg)}
+.family-feature-star{position:absolute;top:7%;right:9%;font-size:67px;color:#fff}
+.family-feature-label{position:absolute;bottom:15px;left:7%;right:7%;padding:12px;text-align:center;border-radius:14px;background:#fffdf4;font-family:'Fredoka',sans-serif;color:#63468c;font-size:17px}
+.family-feature-copy h2{font-size:clamp(34px,3.7vw,51px);line-height:1.16;margin:0 0 17px}
+.family-feature-copy p{color:#61586c;font-size:16px;line-height:1.9;margin:0 0 28px}
+.guide-hero{padding:25px 0 64px;background:radial-gradient(circle at 83% 10%,#f5cce0,transparent 35%),linear-gradient(120deg,#fff9e8,#fff0e9 50%,#f0e7fd)}
+.guide-hero-inner{text-align:center;max-width:790px;margin:auto}
+.guide-hero h1{font-size:clamp(43px,5.5vw,69px);margin:14px 0 19px;line-height:1.12}
+.guide-lead{font-size:18px;line-height:1.75;color:#60566e;margin:0 auto 22px}
+.guide-label{display:inline-block;font-size:12px;letter-spacing:.08em;font-weight:800;border:2px solid #e2d2f2;background:#fff;padding:9px 18px;border-radius:100px;color:#785493}
+.guide-toolbar{display:flex;gap:13px;align-items:center;justify-content:center;flex-wrap:wrap;margin:22px auto}
+.guide-toolbar button{cursor:pointer}
+.guide-content{padding:70px 0;background:#fffdfa}
+.guide-intro{text-align:center;max-width:780px;margin:0 auto 38px}
+.guide-intro h2,.guide-heading{font-size:clamp(31px,3.6vw,45px);line-height:1.18;margin:0 0 16px}
+.guide-intro p{font-size:16px;color:#625a6d;line-height:1.85}
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+.guide-card{padding:29px;border:2px solid #e7d7f1;border-radius:27px;background:#fff;box-shadow:0 9px 22px #5d3b6913;break-inside:avoid}
+.guide-lilac{background:#f6edff}
+.guide-peach{background:#fff1e3;border-color:#ffddc6}
+.guide-mint{background:#edfaee;border-color:#d0ecd8}
+.guide-pink{background:#fff0f5;border-color:#f5d5e4}
+.guide-card h3{font-size:26px;color:#493577;margin:8px 0 16px}
+.guide-card ul{padding-left:22px;color:#514c5d;font-size:15px;line-height:1.75}
+.guide-card li+li{margin-top:12px}
+.guide-card p{color:#575064;font-size:15px;line-height:1.75}
+.guide-note{background:#f4effa;border-left:5px solid #a48ccf;border-radius:0 15px 15px 0;padding:19px 22px;color:#574d64;line-height:1.8;margin-top:27px}
+.guide-activities{padding:70px 0;background:linear-gradient(120deg,#f5efff,#fff7eb)}
+.guide-activities .guide-heading{text-align:center;margin:0 0 28px}
+.guide-writing-space{height:50px;margin:10px 0 16px;border-bottom:2px dashed #b9aacc}
+.guide-ending{text-align:center;background:#fff8e9;padding:70px 0}
+.guide-ending h2{font-size:clamp(32px,3.9vw,51px);margin:0 auto 17px;max-width:780px}
+.guide-ending p{font-size:16px;color:#60586b;max-width:730px;margin:0 auto 22px;line-height:1.85}
+.guide-note-small{font-size:12px!important;margin:33px auto 0!important}
+@media(max-width:750px){.family-feature-grid,.guide-grid{grid-template-columns:1fr}.family-feature-grid{gap:29px}.family-feature-art{min-height:230px}.family-feature-heart{font-size:108px}.guide-hero{padding:18px 0 55px}.guide-lead{font-size:16px}.guide-content,.guide-activities{padding:55px 0}.guide-card{padding:24px}.guide-toolbar .btn{width:100%}}
+@media print{
+ @page{size:letter;margin:.56in}
+ body{background:white!important;color:#111!important;font-size:11pt}
+ .site-header,.site-footer,.guide-toolbar,.back-link,.guide-ending .btn,.skip-link{display:none!important}
+ .guide-hero,.guide-content,.guide-activities,.guide-ending{background:white!important;padding:10px 0!important}
+ .guide-hero h1{font-size:27pt}
+ .guide-hero .guide-lead{font-size:11pt}
+ .guide-content .shell,.guide-hero .shell,.guide-activities .shell,.guide-ending .shell{width:100%!important;max-width:none!important}
+ .guide-grid{display:block!important}
+ .guide-card{display:block!important;background:white!important;box-shadow:none!important;border:1px solid #999!important;padding:13px 18px!important;margin-bottom:14px!important;border-radius:5px!important;page-break-inside:avoid}
+ .guide-card h3{font-size:17pt;color:#111!important}
+ .guide-card li+li{margin-top:6px}
+ .guide-activities{break-before:page}
+ .guide-writing-space{height:32px}
+}
